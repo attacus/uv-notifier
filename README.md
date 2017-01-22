@@ -29,7 +29,7 @@ To decide which UV levels are right for you, please check out the UV index infor
 This app pulls data from the [ARPANSA website](http://www.arpansa.gov.au/). These are official, up-to-date UV readings from the Australian Radiation Protection and Nuclear Safety Agency.
 
 ### UV Index info
-For more information about ultraviolet radiation, [check the Wikipedia article](https://en.wikipedia.org/wiki/Ultraviolet_index)
+For more information about ultraviolet radiation, [check the Wikipedia article](https://en.wikipedia.org/wiki/Ultraviolet_index).
 
 | UV Index | Exposure Category |
 | --- | --- |
@@ -42,4 +42,9 @@ For more information about ultraviolet radiation, [check the Wikipedia article](
 ### Credits
 This code took many pointers from https://github.com/JamesDaniel/DE-Novel-Website-Screen-Scraper
 
-Data taken from [ARPANSA](http://www.arpansa.gov.au/)
+Data taken from [ARPANSA](http://www.arpansa.gov.au/).
+
+### Disclaimer
+I am not a doctor, and this app is not intended to be, nor should it be used as a replacement for medical advice from a qualified professional.
+This app and associated code is in no way affiliated with ARPANSA, the Cancer Council of Australia, or any other organisation.
+For more information about the relationship between UV and skin cancer, see the [Cancer Council of Australia website](http://www.cancer.org.au/preventing-cancer/sun-protection/) and/or consult your doctor.
