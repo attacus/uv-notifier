@@ -29,7 +29,7 @@ To decide which UV levels are right for you, please check out the UV index infor
 This app pulls data from the [ARPANSA website](http://www.arpansa.gov.au/). These are official, up-to-date UV readings from the Australian Radiation Protection and Nuclear Safety Agency.
 
 ### UV Index info
-For more information about ultraviolet radiation, [check the Wiki](https://en.wikipedia.org/wiki/Ultraviolet_index)
+For more information about ultraviolet radiation, [check the Wikipedia article](https://en.wikipedia.org/wiki/Ultraviolet_index)
 
 | UV Index | Exposure Category |
 | --- | --- |

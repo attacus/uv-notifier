@@ -20,9 +20,9 @@ def uvLevel(html):
     for cities in soup.find_all('td', text=city):
         current_uv_rating = cities.next_sibling.getText()
         decimal_uv = decimal.Decimal(current_uv_rating)
-        if decimal_uv <= acceptable_uv:
-                return True
-    return False
+        if decimal_uv is None:
+                return False
+    return True
 
 num_sms_sent = 0
 
@@ -40,15 +40,19 @@ while True:
     response = urllib2.urlopen(request)
     html_doc = response.read()
     uvLevel(html_doc)
-    if decimal_uv <= acceptable_uv:
-        print('The current UV rating is '+ current_uv_rating + '. UV has reached safe levels.')
-    elif decimal_uv == acceptable_uv:
+    if decimal_uv == acceptable_uv:
         print('The current UV rating is '+ current_uv_rating + '. This is safe! Have fun outside.')
         sendSMS('The current UV rating is '+ current_uv_rating + '. This is safe! Have fun outside.')
         num_sms_sent = num_sms_sent + 1
+    elif decimal_uv <= acceptable_uv:
+        print('The current UV rating is '+ current_uv_rating + '. UV has reached safe levels.')
     elif decimal_uv == dangerous_uv:
         print('The current UV rating is '+ current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
         sendSMS('The current UV rating is '+ current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
+        num_sms_sent = num_sms_sent + 1
+    elif decimal_uv == 15.0:
+        print('The current UV rating is '+ current_uv_rating + '. Seriously, it can get this high. I was surprised too.')
+        sendSMS('The current UV rating is '+ current_uv_rating + '. Seriously, it can get this high. I was surprised too.')
         num_sms_sent = num_sms_sent + 1
     else:
         print('The current UV rating is '+ current_uv_rating + '. UV is not at safe levels.')
