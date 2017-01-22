@@ -52,7 +52,6 @@ while True:
         num_sms_sent = num_sms_sent + 1
     elif decimal_uv == 15.0:
         print('The current UV rating is '+ current_uv_rating + '. Seriously, it can get this high. I was surprised too.')
-        sendSMS('The current UV rating is '+ current_uv_rating + '. Seriously, it can get this high. I was surprised too.')
         num_sms_sent = num_sms_sent + 1
     else:
         print('The current UV rating is '+ current_uv_rating + '. UV is not at safe levels.')
