@@ -32,6 +32,7 @@ This app pulls data from the [ARPANSA website](http://www.arpansa.gov.au/). Thes
 For more information about ultraviolet radiation, [check the Wiki](https://en.wikipedia.org/wiki/Ultraviolet_index)
 
 | UV Index | Exposure Category |
+| --- | --- |
 | 2 or less |	Low |
 | 3 to 5 | Moderate |
 | 6 to 7 | High |
@@ -40,4 +41,5 @@ For more information about ultraviolet radiation, [check the Wiki](https://en.wi
 
 ### Credits
 This code took many pointers from https://github.com/JamesDaniel/DE-Novel-Website-Screen-Scraper
-Data courtesy of [ARPANSA](http://www.arpansa.gov.au/)
+
+Data taken from [ARPANSA](http://www.arpansa.gov.au/)
