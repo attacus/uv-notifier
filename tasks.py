@@ -13,10 +13,11 @@ def uv_level(city):
     root = tree.getroot()
 
     for child in root.findall(".//location[@id='" + city + "']/index"):
-        current_uv = decimal.Decimal(child.text)
-        if current_uv is None:
+        current_uv = str(child.text)
+        current_uv_decimalised = decimal.Decimal(current_uv)
+        if current_uv_decimalised is None:
                 print("No UV detected. Either the sun has vanished or there's something wrong with this program.")
-    return current_uv
+    return current_uv_decimalised
 
 
 def send_sms(message):
@@ -35,7 +36,7 @@ def notifier(ctx, city):
 
     while num_sms_sent == 0:
         current_uv = uv_level(city)
-        print(str(current_uv))
+        print(str(current_uv), dt)
         time.sleep(10)
 
         if 3.0 < current_uv < 3.5 and dt.hour < 12:
