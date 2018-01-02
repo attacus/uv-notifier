@@ -22,7 +22,7 @@ To run the app manually, you must run `invoke notifier ${YOUR_CITY}` from the ap
 - Sydney
 - Townsville
 
-You can set your own acceptable UV levels using the `acceptable_uv` variables in `tasks.py`'. These must be in decimal format (e.g. 5.0) for the app to work properly.
+You can set your own acceptable UV levels using the `acceptable_uv` variables in `tasks.py`. These must be in decimal format (e.g. 5.0) for the app to work properly.
 
 To decide which UV levels are right for you, please check out the UV index information provided below.
 
