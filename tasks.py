@@ -20,9 +20,11 @@ def uv_level(city):
                 print("No UV detected. Either the sun has vanished or there's something wrong with this program.")
     return decimal_uv, current_uv_rating
 
+
 def send_sms(message):
     client = Client(os.environ['TWILIO_ACCOUNT_SID'], os.environ['TWILIO_AUTH_TOKEN'])
     client.messages.create(to=os.environ['USER_PHONE'], from_= 'UV Notifier', body=message)
+
 
 @task(help={'city': 'Name of the city to read UV levels in.'})
 def notifier(ctx, city):
