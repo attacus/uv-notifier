@@ -1,5 +1,5 @@
 # UV Notifier
-## Sends you an SMS when the UV levels dip below a safe point, or when they become too dangerous
+## Sends you SMS updates about the UV in your Australian city
 
 ### How to use this app
 - sign up for a free [Twilio](https://www.twilio.com) account
@@ -8,7 +8,8 @@
 - enjoy not getting sunburnt in Australia
 
 ## How to configure this app
-The `city` variable in the Python script can be used to pull the UV index for the following Australian cities (must be properly capitalised, as below):
+To run the app manually, you must run `invoke notifier ${YOUR_CITY}` from the app directory, where `YOUR_CITY` is one of the following Australian cities (must be properly capitalised, as below):
+
 - Adelaide
 - Alice Springs
 - Brisbane
@@ -21,7 +22,7 @@ The `city` variable in the Python script can be used to pull the UV index for th
 - Sydney
 - Townsville
 
-You can set your own acceptable and dangerous UV levels using the `acceptable_uv` and `dangerous_uv` variables in the Python script. These must be in decimal format (e.g. 5.0) for the app to work properly.
+You can set your own acceptable UV levels using the `acceptable_uv` variables in `tasks.py`'. These must be in decimal format (e.g. 5.0) for the app to work properly.
 
 To decide which UV levels are right for you, please check out the UV index information provided below.
 
@@ -40,8 +41,6 @@ For more information about ultraviolet radiation, [check the Wikipedia article](
 | 11+ | Extreme |
 
 ### Credits
-This code took many pointers from https://github.com/JamesDaniel/DE-Novel-Website-Screen-Scraper
-
 Data taken from [ARPANSA](http://www.arpansa.gov.au/).
 
 ### Disclaimer
