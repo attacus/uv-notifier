@@ -8,22 +8,26 @@
 - enjoy not getting sunburnt in Australia!
 
 ## How to configure this app
-To run the app manually, you must run `invoke notifier $YOUR_CITY` from the app directory, where `$YOUR_CITY` is one of the following Australian cities (must be properly capitalised, as below):
+To run the app manually, you must run `invoke notifier $YOUR_CITY` from the app directory, where `$YOUR_CITY` is one of the following Australian cities (or Antarctic stations) (must be properly capitalised, as below):
 
 - Adelaide
 - Alice Springs
 - Brisbane
 - Canberra
+- Casey
 - Darwin
+- Davis
 - Kingston
+- Macquarie Island
+- Mawson
 - Melbourne
 - Newcastle
 - Perth
 - Sydney
 - Townsville
 
-The acceptable UV range is set from 3.0-3.5 by default.
-If you decide to alter this, please note the UV level must be in decimal format (e.g. `5.0` or `2.7`) for the app to work properly.
+The acceptable UV range is set from `3.0`-`3.5` by default.
+If you decide to alter this, please note the UV level must be in decimal format (e.g. `5.0` or `2.7`) for the script to work properly.
 
 To decide which UV levels are right for you, please check out the UV index information provided below.
 
