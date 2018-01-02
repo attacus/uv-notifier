@@ -37,5 +37,5 @@ def notifier(ctx, city):
         print('The current UV rating is ' + current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
         send_sms('The current UV rating is ' + current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
     else:
-        print('The current UV rating is '+ current_uv_rating + '.')
-        send_sms('The current UV rating is '+ current_uv_rating + '.')
+        print('The current UV rating is ' + current_uv_rating + '.')
+        send_sms('The current UV rating is ' + current_uv_rating + '.')
