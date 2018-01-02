@@ -1,9 +1,9 @@
 from twilio.rest import Client
+import xml.etree.ElementTree as eltree
+from invoke import task
+import urllib.request
 import os
 import decimal
-import xml.etree.ElementTree as eltree
-import urllib.request
-from invoke import task
 
 def uv_level(city):
     url = 'https://uvdata.arpansa.gov.au/xml/uvvalues.xml'
@@ -30,11 +30,11 @@ def notifier(ctx, city):
     acceptable_uv = 4.0
 
     if decimal_uv <= acceptable_uv:
-        print('The current UV rating is ' + current_uv_rating + '. Have fun outside.')
-        send_sms('The current UV rating is ' + current_uv_rating + '. Have fun outside.')
+        print('The current UV rating in ' + city + ' is ' + current_uv_rating + '. Have fun outside.')
+        send_sms('The current UV rating in ' + city + ' is ' + current_uv_rating + '. Have fun outside.')
     elif decimal_uv > acceptable_uv:
-        print('The current UV rating is ' + current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
-        send_sms('The current UV rating is ' + current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
+        print('The current UV rating in ' + city + ' is ' + current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
+        send_sms('The current UV rating in ' + city + ' is ' + current_uv_rating + '. Put on sunscreen and a hat or suffer the wrath of the hate orb.')
     else:
-        print('The current UV rating is ' + current_uv_rating + '.')
-        send_sms('The current UV rating is ' + current_uv_rating + '.')
+        print('The current UV rating in ' + city + ' is ' + current_uv_rating + '.')
+        send_sms('The current UV rating in ' + city + ' is ' + current_uv_rating + '.')
