@@ -1,5 +1,4 @@
 from twilio.rest import Client
-import time
 import os
 import decimal
 import xml.etree.ElementTree as eltree
