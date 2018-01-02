@@ -4,7 +4,7 @@
 ### How to use this app
 - sign up for a [Twilio](https://www.twilio.com) account. This app will work on the Twilio free tier, but you'll have to put your Twilio number into the "from" field instead of a custom name.
 - add your Twilio credentials as environment variables on your server (or wherever you're running this thing)
-- run the app on the cron job or trigger of your choice. It is designed to be triggered twice - once in the morning ☀️, and once in the afternoon 🌙.
+- run the app on the cron job or trigger of your choice. It is designed to be triggered twice - once in the morning 🌅, and once in the afternoon ☀️.
 - enjoy not getting sunburnt in Australia!
 
 ## How to configure this app

@@ -39,11 +39,11 @@ def notifier(ctx, city):
         time.sleep(10)
 
         if 3.0 < current_uv < 3.5 and dt.hour < 12:
-            print('☀️ It has just hit' + str(current_uv) + ' in ' + city + '. Put on some sunscreen before going outside.')
-            send_sms('☀️ It has just hit' + str(current_uv) + ' in ' + city + '. Put on some sunscreen before going outside.')
+            print('🌅 It has just hit' + str(current_uv) + ' in ' + city + '. Put on some sunscreen before going outside.')
+            send_sms('🌅 It has just hit' + str(current_uv) + ' in ' + city + '. Put on some sunscreen before going outside.')
             num_sms_sent = num_sms_sent + 1
 
         if 3.0 < current_uv < 3.5 and dt.hour > 12:
-            print('🌙 The current UV rating in ' + city + ' is ' + str(current_uv) + '. Have fun outside.')
-            send_sms('🌙 The current UV rating in ' + city + ' is ' + str(current_uv) + '. Have fun outside.')
+            print('☀️ The current UV rating in ' + city + ' is ' + str(current_uv) + '. Have fun outside.')
+            send_sms('☀️ The current UV rating in ' + city + ' is ' + str(current_uv) + '. Have fun outside.')
             num_sms_sent = num_sms_sent + 1
